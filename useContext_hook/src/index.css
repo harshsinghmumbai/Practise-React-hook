@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+.title {
+  @apply text-center text-lg font-bold text-white;
+}
+.user-text {
+  @apply text-xs font-semibold font-mono;
+}
+@tailwind utilities;
