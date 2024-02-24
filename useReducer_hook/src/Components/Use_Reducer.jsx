@@ -1,7 +1,7 @@
 import { useReducer, useState } from "react";
 
 const reducer = (state, action) => {
-  // console.log(state, action);
+  console.table(state, action);
   if (action.type === "INCREMENT") {
     return state + 1;
   } else if (action.type === "DECREMENT") {
@@ -17,7 +17,7 @@ const Use_Reducer = () => {
   //3.dispatch(updateState) it trigger reducer function at "onClick"
  
   const [state, dispatch /*is like useState updateState */] = useReducer(
-    reducer,
+    reducer,/*Additional*/
     0 /*(initialState)*/
   );
   return (
