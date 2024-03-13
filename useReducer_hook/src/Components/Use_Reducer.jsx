@@ -1,7 +1,7 @@
 import { useReducer, useState } from "react";
 
 const reducer = (state, action) => {
-  console.table(state, action);
+  // console.table(state, action);
   if (action.type === "INCREMENT") {
     return state + 1;
   } else if (action.type === "DECREMENT") {
@@ -15,9 +15,9 @@ const Use_Reducer = () => {
   //2.reducer function defined outside function components
   const [currentstate, updatestate] = useState(0 /*initialState*/);
   //3.dispatch(updateState) it trigger reducer function at "onClick"
- 
+
   const [state, dispatch /*is like useState updateState */] = useReducer(
-    reducer,/*Additional*/
+    reducer /*Additional*/,
     0 /*(initialState)*/
   );
   return (
@@ -26,7 +26,7 @@ const Use_Reducer = () => {
         <p className="text-2xl font-bold text-center font-mono">{state}</p>
         <button
           onClick={() => {
-            dispatch({ type: "INCREMENT" });
+            dispatch({ type: "INCREMENT" } /*this is nothing but action */);
           }}
           className="bg-yellow-300 text-base font-bold p-1 rounded-lg mb-1 active:bg-yellow-200"
         >

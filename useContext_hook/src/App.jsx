@@ -1,11 +1,11 @@
-import  Dashboard  from "./Components/Dashboard";
+import Dashboard from "./Components/Dashboard";
 import UserInfo from "./Context/UserInfo";
 
 // const data = {
 //   name: "Harsh Singh",
 //   Email: "harshrsingh555@gmail.com",
 //   Age: "30 years",
-// };l
+// };
 
 const App = () => {
   return (

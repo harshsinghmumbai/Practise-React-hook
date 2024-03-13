@@ -1,6 +1,7 @@
 import UserContext from "./UserContext";
 
 const UserInfo = ({ children }) => {
+  console.log(children);
   const user = {
     name: "harsh singh",
     email: "harshrsingh555@gmail.com",
